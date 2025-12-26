@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hbg | login</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>hbg | boka färdtjänst</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="../js/index.js" defer></script>
+    <script src="./js/index.js" defer></script>
 </head>
 
 <body>
@@ -41,12 +41,12 @@
                     <li><a class="color-red" href="#">omsorg & stöd </a><i class="fa-solid fa-plus"></i></li>
                     <li><a class="color-red" href="#">trafik & planering</a><i class="fa-solid fa-plus"></i></li>
                     <li><a class="color-red" href="#">uppleva & göra</a><i class="fa-solid fa-plus"></i></li>
-                    <li id="dropdown-parent"><a class="color-red" href="fardtjanst.html">färdtjänst</a><i
+                    <li id="dropdown-parent"><a class="color-red" href="./fardtjanst.html">färdtjänst</a><i
                             id="open-dropdown" class="fa-solid fa-plus"></i>
                         <!--dropdown-->
                         <ul id="dropdown">
                             <li><a href="./bokafardtjanst.html">boka färdtjänst</a></li>
-                            <li><a href="../tillganglighetsredogorelse.html">tillgänglighetsredogörelse</a></li>
+                            <li><a href="./tillganglighetsredogorelse.html">tillgänglighetsredogörelse</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -62,6 +62,7 @@
         </nav>
     </header>
     <!--header & nav-->
+
     <!--overlay-->
     <div id="overlay"></div>
     <!--overlay-->
@@ -70,51 +71,58 @@
     <main class="fardtjanst-main">
         <nav>
             <ul class="breadcrumbs-ul-style">
-                <li><i class="fa-regular fa-house"></i><a href="../index.html">Hem</a></li> <i
+                <li><i class="fa-regular fa-house"></i><a href="./index.html">Hem</a></li> <i
                     class="fa-solid fa-greater-than relative-i"></i>
-                <li><a href="./bokafardtjanst.html">Boka färdtjänst</a></li>
+                <li><a href="./fardtjanst.html">Färdtjänst</a></li>
                 <i class="fa-solid fa-greater-than relative-i"></i>
-                <li class="active-breadcrumb">Logga in</li>
+                <li class="active-breadcrumb">Boka färdtjänst</li>
             </ul>
         </nav>
-
-        <header>
-            <h1 class="color-red">Boka Färdtjänst</h1>
-            <p>Har du färdtjänsttillstånd från skånetrafiken kan du boka resor genom att logga in med
-                <strong>personnummer/kundnummer</strong> och <strong>lösenord</strong> eller med
-                <strong>BankId.</strong>
-            </p>
-        </header>
-
-        <form>
-            <h2 class="color-red">Logga in</h2>
-            <fieldset>
-                <legend>BankId</legend>
-                <a id="login-bankid" href="./boka.html">Logga in med BankId</a>
-            </fieldset>
-            <div>
-                <span></span><strong>eller</strong><span></span>
-            </div>
-            <fieldset>
-                <legend>Användardata</legend>
-                <div>
-                    <label for="personal-identity">Personnummer/kundnummer</label>
-                    <input type="text" name="personal-identity" placeholder="skriv ditt personnummer eller kundnummer"
-                        id="personal-identity">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div>
-                    <label for="password">Lösenord</label>
-                    <input type="password" name="password" placeholder="skriv ditt lösenord" id="password">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-            </fieldset>
-            <a>Glömnt användardata?</a>
-            <a id="login-pers" href="./boka.html"> Logga in </a>
-        </form>
-
+        <figure>
+            <picture>
+                <source srcset="./images/fardtjanst-boka-top.avif" type="image/avif">
+                <source srcset="./images/fardtjanst-boka-top.webp" type="image/webp">
+                <img src="./images/fardtjanst-boka-top.jpg"
+                    alt="En chaufför hjälper en man i rullstol att komma in i en färdtjänstbil.">
+            </picture>
+        </figure>
+        <article>
+            <header>
+                <h1 class="color-red">Boka färdtjänst
+                </h1>
+                <p class="ingress">Har du färdtjänsttillstånd från Skånetrafiken kan du boka resor dygnet runt, året
+                    runt – via
+                    bokningssida eller via telefon.</p>
+                <p class="ingress color-red">Beställ färdtjänst minst 3 timmar före avresa för att öka chansen att få den
+                    tid du önskar</p>
+            </header>
+            <section>
+                <h2 class="color-red">Boka via bokningssidan</h2>
+                <p>Du kan boka din resa online via vår bokningssida:
+                </p>
+                <a id="login-to-app" class="margin-t" href="./login.html">logga in</a>
+            </section>
+            <section>
+                <h2 class="color-red">Boka via telefon</h2>
+                <p><strong>Ring: </strong><a class="a-tel-style" href="tel:0770112233">077-11 22 33</a>
+                </p>
+                <p class="m-top-b"><strong>Ha följande uppgifter redo:</strong></p>
+                <ul>
+                    <li>kundnummer eller personnummer</li>
+                    <li>från- och till-adress</li>
+                    <li>datum och tid för resan</li>
+                    <li>tid då du senast behöver vara framme</li>
+                    <li>om du har med dig sällskap</li>
+                    <li>om du tar med hjälpmedel</li>
+                    <li>ditt telefonnummer</li>
+                </ul>
+                <p>När vi har fått alla uppgifter bokar vi resan åt dig.
+                    Under samtalet får du veta hämtningstid och vad resan kostar.</p>
+            </section>
+        </article>
     </main>
     <!--main-->
+
     <!--footer-->
     <footer>
         <p>footer</p>
