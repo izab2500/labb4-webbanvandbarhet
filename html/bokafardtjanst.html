@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hbg | boka färdtjänst</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+    <!--header & nav-->
+    <header>
+        <div class="bg-white">
+            <p>global navigering</p>
+        </div>
+        <div class="bg-pink">
+            <div id="open-menue">
+                <i class="fa-solid fa-bars"></i> <button>meny</button>
+            </div>
+        </div>
+        <nav class="close-nav" id="nav">
+            <div id="close" class="bg-pink">
+                <p id="close-p">stäng</p><i id="close-i" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="bg-white color-red">
+                <div><i class="fa-regular fa-house"></i> <a class="color-red" href="#">För dig som invånare</a>
+                </div>
+            </div>
+            <div class="bg-pink">
+                <ul>
+                    <li><a class="color-red" href="#">Arbete</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">bygga, bo & miljö</a> <i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">förskola & utbildning</a> <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li><a class="color-red" href="#">kommun & politik</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">omsorg & stöd </a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">trafik & planering</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">uppleva & göra</a><i class="fa-solid fa-plus"></i></li>
+                    <li id="dropdown-parent"><a class="color-red" href="fardtjanst.html">färdtjänst</a><i
+                            id="open-dropdown" class="fa-solid fa-plus"></i>
+                        <!--dropdown-->
+                        <ul id="dropdown">
+                            <li><a href="./bokafardtjanst.html">boka färdtjänst</a></li>
+                            <li><a href="../tillganglighetsredogorelse.html">tillgänglighetsredogörelse</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-red color-white">
+                <ul>
+                    <li><a class="color-white" href="#">besökare</a></li>
+                    <li><a class="color-white" href="#">företagare</a></li>
+                    <li><a class="color-white" href="#">e-tjänster & blanketter</a></li>
+                    <li><a class="color-white" href="#">språk</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--header & nav-->
+
+    <!--overlay-->
+    <div id="overlay"></div>
+    <!--overlay-->
+
+    <!--main-->
+    <main class="fardtjanst-main">
+        <nav>
+            <ul class="breadcrumbs-ul-style">
+                <li><i class="fa-regular fa-house"></i><a href="../index.html">Hem</a></li> <i
+                    class="fa-solid fa-greater-than relative-i"></i>
+                <li><a href="./fardtjanst.html">Färdtjänst</a></li>
+                <i class="fa-solid fa-greater-than relative-i"></i>
+                <li class="active-breadcrumb">Boka färdtjänst</li>
+            </ul>
+        </nav>
+        <figure>
+            <picture>
+                <source srcset="../images/fardtjanst-boka-top.avif" type="image/avif">
+                <source srcset="../images/fardtjanst-boka-top.webp" type="image/webp">
+                <img src="../images/fardtjanst-boka-top.jpg"
+                    alt="En chaufför hjälper en man i rullstol att komma in i en färdtjänstbil.">
+            </picture>
+        </figure>
+        <article>
+            <header>
+                <h1 class="color-red">Boka färdtjänst
+                </h1>
+                <p class="ingress">Har du färdtjänsttillstånd från Skånetrafiken kan du boka resor dygnet runt, året
+                    runt – via
+                    bokningssida eller via telefon.</p>
+                <p class="ingress color-red">Beställ färdtjänst minst 3 timmar före avresa för att öka chansen att få den
+                    tid du önskar</p>
+            </header>
+            <section>
+                <h2 class="color-red">Boka via bokningssidan</h2>
+                <p>Du kan boka din resa online via vår bokningssida:
+                </p>
+                <a id="login-to-app" class="margin-t" href="./login.html">logga in</a>
+            </section>
+            <section>
+                <h2 class="color-red">Boka via telefon</h2>
+                <p><strong>Ring: </strong><a class="a-tel-style" href="tel:0770112233">077-11 22 33</a>
+                </p>
+                <p class="m-top-b"><strong>Ha följande uppgifter redo:</strong></p>
+                <ul>
+                    <li>kundnummer eller personnummer</li>
+                    <li>från- och till-adress</li>
+                    <li>datum och tid för resan</li>
+                    <li>tid då du senast behöver vara framme</li>
+                    <li>om du har med dig sällskap</li>
+                    <li>om du tar med hjälpmedel</li>
+                    <li>ditt telefonnummer</li>
+                </ul>
+                <p>När vi har fått alla uppgifter bokar vi resan åt dig.
+                    Under samtalet får du veta hämtningstid och vad resan kostar.</p>
+            </section>
+        </article>
+    </main>
+    <!--main-->
+
+    <!--footer-->
+    <footer>
+        <p>footer</p>
+    </footer>
+    <!--footer-->
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hbg | färdtjänst</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+    <!--header & nav-->
+    <header>
+        <div class="bg-white">
+            <p>global navigering</p>
+        </div>
+        <div class="bg-pink">
+            <div id="open-menue">
+                <i class="fa-solid fa-bars"></i> <button>meny</button>
+            </div>
+        </div>
+        <nav class="close-nav" id="nav">
+            <div id="close" class="bg-pink">
+                <p id="close-p">stäng</p><i id="close-i" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="bg-white color-red">
+                <div><i class="fa-regular fa-house"></i> <a class="color-red" href="#">För dig som invånare</a>
+                </div>
+            </div>
+            <div class="bg-pink">
+                <ul>
+                    <li><a class="color-red" href="#">Arbete</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">bygga, bo & miljö</a> <i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">förskola & utbildning</a> <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li><a class="color-red" href="#">kommun & politik</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">omsorg & stöd </a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">trafik & planering</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">uppleva & göra</a><i class="fa-solid fa-plus"></i></li>
+                    <li id="dropdown-parent"><a class="color-red" href="fardtjanst.html">färdtjänst</a><i
+                            id="open-dropdown" class="fa-solid fa-plus"></i>
+                        <!--dropdown-->
+                        <ul id="dropdown">
+                            <li><a href="./bokafardtjanst.html">boka färdtjänst</a></li>
+                            <li><a href="../tillganglighetsredogorelse.html">tillgänglighetsredogörelse</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-red color-white">
+                <ul>
+                    <li><a class="color-white" href="#">besökare</a></li>
+                    <li><a class="color-white" href="#">företagare</a></li>
+                    <li><a class="color-white" href="#">e-tjänster & blanketter</a></li>
+                    <li><a class="color-white" href="#">språk</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--header & nav-->
+
+    <!--overlay-->
+    <div id="overlay"></div>
+    <!--overlay-->
+
+    <!--main-->
+    <main class="fardtjanst-main">
+        <nav>
+            <ul class="breadcrumbs-ul-style">
+                <li><i class="fa-regular fa-house"></i><a href="../index.html">Hem</a></li> <i
+                    class="fa-solid fa-greater-than relative-i"></i>
+                <li class="active-breadcrumb">Färdtjänst</li>
+            </ul>
+        </nav>
+        <figure>
+            <picture>
+                <source srcset="../images/fardtjanst-top.avif" type="image/avif">
+
+                <source srcset="../images/fardtjanst-top.webp" type="image/webp">
+                <img src="i../images/fardtjanst-top.webp.jpg"
+                    alt="En chaufför hjälper en man i rullstol att komma in i en färdtjänstbil.">
+            </picture>
+        </figure>
+        <article>
+            <header>
+                <h1 class="color-red">Färdtjänst i Helsingborg
+                </h1>
+                <div class="ingress">
+                    <p>Färdtjänst finns för dig som har ett funktionshinder som gör det svårt att resa
+                        på egen hand eller att åka med vanlig kollektivtrafik.</p>
+                    <p>För att resa med färdtjänst behöver du ett särskilt tillstånd. Det är handläggare på
+                        Skånetrafiken som prövar din ansökan. </p>
+                    <p>u måste vara 18-år eller mer för att ansöka om färdtjänsttillstånd: digitalt eller via blankett.
+                        När din ansökan har behandlats får du beslutet hemskickat till din bostadsaddress.</p>
+                    <p>Om du får rätt till färdtjänsttillstånd kan du åka
+                        kollektivtraffik gratis inom Skåne med ledsagare. Annars tillkommer en avgift beroende på
+                        om du åker själv eller med sällskap.</p>
+                    <a href="./login.html">Har du färdtjänsttillstånd? Klicka här för att logga in.</a>
+                    </div>
+            </header>
+
+            <section>
+                <h2 class="color-red">Vem kan få färdtjänst?</h2>
+                <ul>
+                    <li>Du kan ha rätt till färdtjänst om du:</li>
+                    <li>är folkbokförd i Helsingborg</li>
+                    <li>har ett funktionshinder som varar i minst tre månader</li>
+                    <li>har stora svårigheter att förflytta dig eller resa med vanlig kollektivtrafik</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="color-red">Ansök om färdtjänsttillstånd</h2>
+                <p>Det är Skånetrafikens färdtjänsthandläggare som beslutar om du får färdtjänst.
+                    Du kan ansöka digitalt eller via blankett.
+                    Du behöver vara 18 år eller äldre för att ansöka.</p>
+                <h3 class="color-red">Ansök digitalt
+                </h3>
+                <p>För att ansöka digitalt behöver du BankID</p>
+                <p>Så här gör du:</p>
+                <ol>
+                    <li>Logga in på 1177.se.</li>
+                    <li>Gå till rutan Mottagningar och klicka på ”Hitta och lägg till”.</li>
+                    <li>Sök på Skånetrafiken.</li>
+                    <li>Välj ”Ansök om färdtjänst”.</li>
+                    <li>Du kan bara ansöka för dig själv.</li>
+                </ol>
+                <p><strong class="color-red">Frågor?</strong> <br>
+                    <strong>Ring:</strong> <a class="a-tel-style" href="tel:0770112233">077-11 22 33</a> eller <br>
+                    <strong>Mejla:</strong> <a class="a-tel-style"
+                        href="mailto:fardtjanst@mejl.se">fardtjanst@mejl.se</a><br>
+                    <strong>Vi svarar helgfri vardag:</strong> kl. 08.00–18.00.
+                </p>
+                <h3 class="color-red">Ansök via blankett</h3>
+                <ol>
+                    <li>Ladda ner pdf-blanketten: <a href="#">ladda ner blankett.</a></li>
+                    <li>Fyll i blanketten.</li>
+                    <li>Sök på Skånetrafiken.</li>
+                    <li>Skicka den till:</li>
+                </ol>
+                <address>
+                    <p>Skånetrafiken Färdtjänst </p>
+                    <p>Staden 123 45</p>
+                </address>
+                <p><strong class="color-red">Frågor?</strong><br>
+                    <strong>Ring:</strong> <a class="a-tel-style" href="tel:0770112233">077-11 22 33</a> eller
+                    <br><strong>Mejla:</strong> <a class="a-tel-style"
+                        href="mailto:fardtjanst@mejl.se">fardtjanst@mejl.se</a>
+                    <br>
+                    <strong>Vi svarar helgfri vardag:</strong>kl. 08.00–18.00.
+                </p>
+            </section>
+            <section>
+                <h2 class="color-red">Efter att du har ansökt
+                </h2>
+                <p>är vi fått din ansökan gör en handläggare en utredning enligt Lag (1997:736) om färdtjänst.
+                    Du blir kontaktad när handläggningen startar.</p>
+                <p>När beslutet är klart skickas det hem till dig.
+                    Vill du överklaga finns instruktioner i beslutet.</p>
+            </section>
+            <section>
+                <h2 class="color-red">Så behandlar vi dina personuppgifter
+                </h2>
+                <p>Skånetrafiken hanterar dina personuppgifter enligt GDPR. Uppgifterna behövs för att
+                    kunna bedöma om du har rätt till färdtjänst.</p>
+                <p>Känsliga personuppgifter skyddas enligt lag och sparas bara så länge de behövs. När ärendet
+                    är avslutat gallras uppgifterna eller arkiveras.</p>
+                <p>Uppgifterna skyddas av Offentlighets- och sekretesslagen kap. 29 §§ 6–7.</p>
+                <a>Så behandlar vi dina personuppgifter</a>
+            </section>
+            <section>
+                <h2 class="color-red">Resa med färdtjänst</h2>
+                <p>När du reser med färdtjänst kan du få samåka med andra. Det kan innebära att resan
+                    tar något längre tid än en direktresa.</p>
+                <p>Du måste alltid kunna legitimera dig med giltig ID-handling.</p>
+                <h3 class="color-red">Åk gratis inom Skåne med ledsagare
+                </h3>
+                <p>När ditt färdtjänsttillstånd beviljas får du en servicebiljett.
+                    Med den kan du och din ledsagare åka gratis med Skånetrafikens tåg och bussar inom Skåne.
+                </p>
+            </section>
+            <section>
+                <h2 class="color-red">Kostnad för färdtjänstresor
+                </h2>
+                <p>Du faktureras i efterhand. Priset beror på hur långt du reser.
+                </p>
+                <h3 class="color-red">Du kan ta med:</h3>
+                <ul>
+                    <li>2 vuxna – avgift tillkommer</li>
+                    <li>1 ledsagare – åker gratis</li>
+                    <li>3 barn – barn under 7 år åker gratis</li>
+                    <li>sällskapsdjur – avgift tillkommer</li>
+                    <li>servicehund/ledarhund – åker gratis</li>
+                </ul>
+                <a>Prislista för färdtjänst</a>
+            </section>
+            <section>
+                <h2 class="color-red">Om din faktura
+                </h2>
+                <h3 class="color-red">Du kan få fakturan:
+                </h3>
+                <ul>
+                    <li>till din digitala brevlåda</li>
+                    <li>som e-faktura i din internetbank</li>
+                    <li>med brev hem</li>
+                    <li>du kan också välja att betala med autogiro</li>
+                </ul>
+                <a>Om din faktura – Region Skåne</a>
+            </section>
+        </article>
+    </main>
+    <!--main-->
+
+    <!--footer-->
+    <footer>
+        <p>footer</p>
+    </footer>
+    <!--footer-->
+</body>
+
+</html>

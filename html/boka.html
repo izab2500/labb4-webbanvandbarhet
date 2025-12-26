@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hbg | boka resa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+    <main id="main-web-app">
+        <button type="button" id="open-web-app-nav" aria-label="öppna meny"><i class="fa-solid fa-bars"></i>
+            <span>Meny</span> </button>
+        <nav id="web-app-nav" class="hide-nav-web-app">
+            <ul>
+                <li><a data-section="book-section" class="active-nav-link">
+                        <i class="fa-solid fa-car"></i>
+                        <span>Boka</span>
+                    </a>
+                    <button id="close-web-app-nav" type="button" aria-label="stäng meny"><i
+                            class="fa-solid fa-xmark"></i>
+                        <span>Stäng</span> </button>
+                </li>
+                <li><a data-section="change-section">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>Ändra/avboka</span>
+                    </a></li>
+                <li><a data-section="favourite-section">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Favoritresor</span>
+                    </a></li>
+                <li><a href="/index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logga ut</span>
+                    </a></li>
+            </ul>
+        </nav>
+        <!--boka-->
+        <div id="book-section" class="active-section">
+            <h1 class="color-red">Hej [namn på användare]</h1>
+            <form id="form-web-app">
+                <div id="book-h-btns">
+                    <h2 class="color-red">Boka resa</h2>
+                    <button data-fields="tur" type="button">Enkel resa</button>
+                    <button data-fields="retur" type="button">Tur/retur</button>
+                </div>
+                <!--tur-->
+                <fieldset data-trip="one-ticket" class="hidden">
+                    <legend>Tur</legend>
+                    <section>
+                        <h3 class="color-red">Var vill du åka</h3>
+                        <div>
+                            <label for="from">Från</label>
+                            <input type="text" name="from" id="from" placeholder="skriv din address">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <label for="to">Till</label>
+                            <input type="text" name="to" id="to" placeholder="skriv din destination">
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="color-red">När vill du åka</h3>
+                        <div>
+                            <label for="date">Datum</label>
+                            <input class="date" type="date" name="date" id="date">
+                        </div>
+                        <div>
+                            <label for="time">Tid</label>
+                            <input class="time" type="time" name="time" id="time">
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="color-red">Medresenär</h3>
+                        <div class="companion-kids-or-adults">
+                            <div>
+                                <label for="children">Barn (åker gratis)</label>
+                                <select id="children" name="children">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="adults">Vuxna (avgift tillkommer)</label>
+                                <select id="adults" name="adults">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="companion-checkboxes">
+                            <label>
+                                <input type="checkbox" name="escort">
+                                Ledsagare (åker gratis)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pet">
+                                Sällskapsdjur (avgift tillkommer)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="service-dog">
+                                Service-/ledarhund (åker gratis)
+                            </label>
+                        </div>
+                    </section>
+                </fieldset>
+                <!--retur-->
+                <fieldset data-trip="return" class="hidden">
+                    <legend>Retur</legend>
+                    <section>
+                        <h3 class="color-red">När hämtar vi dig</h3>
+                        <div>
+                            <label for="date-retur">Datum</label>
+                            <input class="date" type="date" name="date-retur" id="date-retur">
+                        </div>
+                        <div>
+                            <label for="time-retur">Tid</label>
+                            <input class="time" type="time" name="time-retur" id="time-retur">
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="color-red">Medresenär</h3>
+                        <div class="companion-kids-or-adults">
+                            <div>
+                                <label for="children-retur">Barn (åker gratis)</label>
+                                <select id="children-retur" name="children-retur">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="adults-retur">Vuxna (avgift tillkommer)</label>
+                                <select id="adults-retur" name="adults-retur">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="companion-checkboxes">
+                            <label>
+                                <input type="checkbox" name="escort-retur">
+                                Ledsagare (åker gratis)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pet-retur">
+                                Sällskapsdjur (avgift tillkommer)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="service-dog-retur">
+                                Service-/ledarhund (åker gratis)
+                            </label>
+                        </div>
+                    </section>
+                </fieldset>
+                <section data-trip="always" class="hidden">
+                    <h3 class="color-red">Vill du skriva något?</h3>
+                    <div>
+                        <label for="message">Meddelande (valfritt)</label>
+                        <textarea name="message" id="message" placeholder="skriv ditt meddelande"></textarea>
+                    </div>
+                </section>
+                <div data-trip="always" class="hidden">
+                    <div id="favourite" tabindex="0">
+                        <i class="fa-regular fa-heart"></i>
+                        Favoritresa
+                    </div>
+                    <button class="color-white bg-red" type="submit">Boka resa</button>
+                </div>
+
+            </form>
+        </div>
+        <!--ändra/avboka-->
+        <section id="change-section" class="hidden">
+            <h2 class="color-red">Ändra eller avboka resor</h2>
+            <div class="booked-trips"></div>
+        </section>
+
+        <!--favoritresor-->
+        <section id="favourite-section" class="hidden">
+            <h2 class="color-red">Favoritresor</h2>
+            <div></div>
+        </section>
+    </main>
+</body>
+
+</html>

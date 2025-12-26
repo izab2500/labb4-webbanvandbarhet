@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hbg | tillgänglighetsredogörelse</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+    <!--header & nav-->
+    <header>
+        <div class="bg-white">
+            <p>global navigering</p>
+        </div>
+        <div class="bg-pink">
+            <div id="open-menue">
+                <i class="fa-solid fa-bars"></i> <button>meny</button>
+            </div>
+        </div>
+        <nav class="close-nav" id="nav">
+            <div id="close" class="bg-pink">
+                <p id="close-p">stäng</p><i id="close-i" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="bg-white color-red">
+                <div><i class="fa-regular fa-house"></i> <a class="color-red" href="#">För dig som invånare</a>
+                </div>
+            </div>
+            <div class="bg-pink">
+                <ul>
+                    <li><a class="color-red" href="#">Arbete</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">bygga, bo & miljö</a> <i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">förskola & utbildning</a> <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li><a class="color-red" href="#">kommun & politik</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">omsorg & stöd </a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">trafik & planering</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">uppleva & göra</a><i class="fa-solid fa-plus"></i></li>
+                    <li id="dropdown-parent"><a class="color-red" href="./html/fardtjanst.html">färdtjänst</a><i
+                            id="open-dropdown" class="fa-solid fa-plus"></i>
+                        <!--dropdown-->
+                        <ul id="dropdown">
+                            <li><a href="./html/bokafardtjanst.html">boka färdtjänst</a></li>
+                            <li><a href="tillganglighetsredogorelse.html">tillgänglighetsredogörelse</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-red color-white">
+                <ul>
+                    <li><a class="color-white">besökare</a></li>
+                    <li><a class="color-white">företagare</a></li>
+                    <li><a class="color-white">e-tjänster & blanketter</a></li>
+                    <li><a class="color-white">språk</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--header & nav-->
+    <!--overlay-->
+    <div id="overlay"></div>
+    <!--overlay-->
+    <main id="tillgredo">
+        <h1 class="color-red">
+           <span>Tillgänglighets</span><span>redogörelse</span>
+        </h1>
+
+        <section>
+            <h2>1. Struktur och navigering</h2>
+            <p>Webbplatsen har en tydlig och konsekvent struktur. Huvudnavigeringen är lättillgänglig med en meny som är
+                uppdelad i olika sektioner. Brödsmulor används för att beskriva var användaren
+                befinner sig på webbplatsen. Det har även implementerat ett responsivt designmönster så att webbplatsen
+                anpassar sig för olika skärmstorlekar.</p>
+        </section>
+
+        <section>
+            <h2>2. Text och läsbarhet</h2>
+            <p>Texten på webbplatsen är lättläst med bra kontrast mot bakgrunden. Den har tillräcklig storlek för att
+                vara läsbar för alla användare. Den har också funktionalitet för att justera textstorleken för
+                att öka tillgängligheten för användare med nedsatt syn. All text är på svenska och följer en konsekvent
+                stil och layout.</p>
+        </section>
+
+        <section>
+            <h2>3. Bilder och media</h2>
+            <p>Alla bilder på webbplatsen har alt-texter för att säkerställa att synskadade användare kan förstå
+                innehållet.</p>
+        </section>
+
+        <section>
+            <h2>4. Formulär och interaktion</h2>
+            <p>Alla formulärfält är tydligt märkta med ikoner och labels, vilket gör det enkelt att fylla i
+                och förstå vad som krävs. Vi har även säkerställts så att formulär kan navigeras med tangentbord och att
+                interaktiva element såsom knappar och länkar fungerar på ett förutsägbart sätt. Fälten är dessutom
+                tillräckligt stora för att säkerställa att de är lätta att välja för användare med motoriska
+                svårigheter.</p>
+        </section>
+
+        <section>
+            <h2>5. Länkar och interaktiva element</h2>
+            <p>Länkar är beskrivande och ger tydlig information om vart de leder. Användare kan enkelt hitta och klicka
+                på länkar, och interaktiva element (som knappar och dropdown-menyer) kan navigeras och aktiveras
+                med tangentbordet.</p>
+        </section>
+
+        <section>
+            <h2>6. Brister</h2>
+            <p>För att förbättra tillgängligheten, finns det områden som
+                kan förbättras. Bland annat, vissa kontrastförhållanden mellan text och bakgrund
+                kan göras tydligare, tillämpa ARIA, på vissa markup-element krävs en tydligare semantiskt definition för
+                att det ska bli än mer tillgängligt. Vissa delar av webbplatsen kan fortfarande vara svåra att navigera
+                med hjälp av
+                skärmläsare eller tangentbord.</p>
+        </section>
+
+        <section>
+            <h2>7. Testning av webbplats</h2>
+            <p>Webbplatsen har testats och fungerar i de senaste versionerna av webbläsare som Google
+                Chrome,Edge, Mozilla Firefox och Safari.</p>
+        </section>
+
+        <section>
+            <h2>8. Förbättringar</h2>
+            <p>För att förbättra tillgängligheten på webbplatsen. Är målet att den
+                uppfyller alla krav enligt WCAG 2.1 (Web Content Accessibility Guidelines). För oss är det väldigt
+                viktigt att den är tillgängligt och användbar för alla våra användare.
+            </p>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>footer</p>
+    </footer>
+    <!--footer-->
+</body>
+
+</html>

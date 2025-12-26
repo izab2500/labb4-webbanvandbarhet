@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/index.js" defer></script>
+    <title>hbg | Hem</title>
+</head>
+
+<body>
+    <!--header & nav-->
+    <header>
+        <div class="bg-white">
+            <p>global navigering</p>
+        </div>
+        <div class="bg-pink">
+            <div id="open-menue">
+                <i class="fa-solid fa-bars"></i> <button>meny</button>
+            </div>
+        </div>
+        <nav class="close-nav" id="nav">
+            <div id="close" class="bg-pink">
+                <p id="close-p">stäng</p><i id="close-i" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="bg-white color-red">
+                <div><i class="fa-regular fa-house"></i> <a class="color-red" href="#">För dig som invånare</a>
+                </div>
+            </div>
+            <div class="bg-pink">
+                <ul>
+                    <li><a class="color-red" href="#">Arbete</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">bygga, bo & miljö</a> <i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">förskola & utbildning</a> <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li><a class="color-red" href="#">kommun & politik</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">omsorg & stöd </a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">trafik & planering</a><i class="fa-solid fa-plus"></i></li>
+                    <li><a class="color-red" href="#">uppleva & göra</a><i class="fa-solid fa-plus"></i></li>
+                    <li id="dropdown-parent"><a class="color-red" href="./html/fardtjanst.html">färdtjänst</a><i id="open-dropdown"
+                            class="fa-solid fa-plus"></i>
+                        <!--dropdown-->
+                        <ul id="dropdown">
+                            <li><a href="./html/bokafardtjanst.html">boka färdtjänst</a></li>
+                            <li><a href="tillganglighetsredogorelse.html">tillgänglighetsredogörelse</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-red color-white">
+                <ul>
+                    <li><a class="color-white" href="#">besökare</a></li>
+                    <li><a class="color-white" href="#">företagare</a></li>
+                    <li><a class="color-white" href="#">e-tjänster & blanketter</a></li>
+                    <li><a class="color-white" href="#">språk</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--header & nav-->
+
+    <!--overlay-->
+    <div id="overlay"></div>
+    <!--overlay-->
+
+    <!--main-->
+    <main id="main-home">
+        <p>main</p>
+    </main>
+    <!--main-->
+
+    <!--footer-->
+    <footer>
+        <p>footer</p>
+    </footer>
+    <!--footer-->
+
+</body>
+
+</html>
